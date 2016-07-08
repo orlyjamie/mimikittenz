@@ -74,7 +74,7 @@ https://creativecommons.org/licenses/by/4.0/
 
 - Custom target process - Just append your target proccess name into the array:
 
-`$matches=[mimikittenz.MemProcInspector]::InspectManyProcs("iexplore","chrome","firefox")`
+`[mimikittenz.MemProcInspector]::InspectManyProcs("iexplore","chrome","firefox")`
 # Contributions
 
 I'd love to see the list of regex's and target processe's grow in order to build a comprehensive post-exploitaiton hit list.
