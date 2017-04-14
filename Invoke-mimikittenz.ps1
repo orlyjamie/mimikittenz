@@ -563,7 +563,7 @@ Add-Type -TypeDefinition $Source2 -Language CSharp -CompilerParameters $inmem
 #Gaming Related Apps
 
     #Faceit Web
-    [mimikittenz.MemProcInspector]::AddRegex("FACEIT.com","email=.{1,50}&password=.{1,50}")
+    [mimikittenz.MemProcInspector]::AddRegex("FACEIT.com","login_email=.{1,50}&login_password=.{1,50}")
     #Faceit Anti-Cheat
     #[mimikittenz.MemProcInspector]::AddRegex("FACEIT Client","<regex_here>")
     #ESEA Web
