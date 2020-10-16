@@ -38,7 +38,7 @@ Currently `mimikittenz` is able to extract the following credentials from memory
 - Citrix NetScaler
 - Remote Desktop Web Access 2012
 
-#####Developement#####
+#####Development#####
 
 - Jira
 - Github
@@ -72,7 +72,7 @@ https://creativecommons.org/licenses/by/4.0/
 
 `[mimikittenz.MemProcInspector]::AddRegex("<NameOfTarget>","<regex_here>")`
 
-- Custom target process - Just append your target proccess name into the array:
+- Custom target process - Just append your target process name into the array:
 
 `[mimikittenz.MemProcInspector]::InspectManyProcs("iexplore","chrome","firefox")`
 # Contributions
